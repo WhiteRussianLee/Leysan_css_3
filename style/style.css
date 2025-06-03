@@ -1,0 +1,14 @@
+
+.parallax {
+  /* The image used */
+  background-image: url("file:///C:/Users/Leysan/Desktop/Talentform%20Esercizi/2305/DALL%C2%B7E%202025-02-04%2017.18.07%20-%20A%20Mediterranean%20summer-themed%20scene%20featuring%20a%20brunette%20woman%20with%20long%20brown%20hair%20seated%20backwards,%20her%20face%20completely%20hidden,%20eating%20spaghetti%20at%20.webp");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
