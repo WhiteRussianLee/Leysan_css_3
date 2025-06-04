@@ -32,12 +32,11 @@ p {
 
 .container {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: auto;
-  background-color: #f1f1f1;
-  margin: 10px 0;
+  flex-wrap: nowrap;       /* obbliga le card a stare sulla stessa riga */
+  overflow-x: auto;        /* abilita lo scroll orizzontale se servono più di 100% */
+  gap: 1rem;               /* spazio tra le card */
   padding: 1rem;
-  gap: 1rem;
+  background-color: #f1f1f1;
 }
 
 .card {
@@ -48,7 +47,7 @@ p {
   padding: 1.5rem;
   text-align: center;
   transition: transform 0.2s;
-  flex-shrink: 0;
+  flex-shrink: 0;          /* impedisce che la card si rimpicciolisca */
 }
 
 .card:hover {
