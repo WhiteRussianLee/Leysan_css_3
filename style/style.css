@@ -13,12 +13,23 @@ p {
   color:#5C3C47 
 }
  
+footer {
+  display: flex;
+  justify-content: center;
+
+}
+
    .classe-testo {
      text-align: center; /* o left, right, justify, ecc. */
-   }
+     
+    }
+    .classe-testo>p {
+      padding: 5px;
+
+    }
 .parallax {
   /* The image used */
-  background-image: url("file:///C:/Users/Leysan/Desktop/Talentform%20Esercizi/2305/DALL%C2%B7E%202025-02-04%2017.18.07%20-%20A%20Mediterranean%20summer-themed%20scene%20featuring%20a%20brunette%20woman%20with%20long%20brown%20hair%20seated%20backwards,%20her%20face%20completely%20hidden,%20eating%20spaghetti%20at%20.webp");
+  background-image: url("https://picsum.photos/1920/1080?random=3");
 
   /* Set a specific height */
   min-height: 500px;
@@ -30,26 +41,48 @@ p {
   background-size: cover;
 }
 
-.container {
+.slider {
   display: flex;
-  flex-wrap: nowrap;       /* obbliga le card a stare sulla stessa riga */
-  overflow-x: auto;        /* abilita lo scroll orizzontale se servono più di 100% */
-  gap: 1rem;               /* spazio tra le card */
-  padding: 1rem;
-  background-color: #f1f1f1;
-  justify-content: center;
+  overflow-x: auto;
+  
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding: 12px;
+  background: #f9f9f9;
 }
 
 .card {
-  background-color: white;
+  flex: 0 0 160px;
+  height: 220px;
+  background: #ffffff;
+  scroll-snap-align: center;
   border-radius: 12px;
-  box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
-  width: 300px;
-  padding: 30px;
-  text-align: center;
-  transition: transform 0.2s;
-  flex-shrink: 0;          /* impedisce che la card si rimpicciolisca */
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
+
+.card-img {
+  width: 80px;
+  height: 80px;
+
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 2px solid #ddd;
+}
+
+.card-title {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+}
+
 
 .card:hover {
   transform: translateY(-5px);
@@ -74,19 +107,7 @@ box-shadow:  27px 27px 54px #3f5966,
   transform: translateY(-5px);
 }
 
-footer {
-  justify-content: center;
-
-}
-
-  .card-img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    background: transparent;
-    object-fit: cover;
-    margin-bottom: 10px;
-  }
+  
 .cardcontainer2 {
   display:flex;
   justify-content:center ;
@@ -95,6 +116,19 @@ footer {
 
 }
 
+.cardcontainer3 {
+  display:flex;
+  justify-content:center ;
+ gap: 1rem;               /* spazio tra le card */
+  padding: 1rem;
+ background: #ffffff;
+  border-radius: 12px;
+  padding: 12px;
+  flex-direction:row;
+  align-items: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
 .buttons {
   display:flex;
   justify-content:center;
@@ -102,7 +136,19 @@ footer {
   border-radius: 50px;
   text-align: center;
   text-transform: capitalize;
+  font-family: Roboto;
+
 }
+
+.button1:hover {
+  transform: translateY(-5px);
+} 
+
+
+.button2:hover {
+  transform: translateY(-5px);
+}
+/*
 @media (min-width: 576px) {}
 
 @media (min-width: 768px) {}
@@ -111,4 +157,4 @@ footer {
 
 @media (min-width: 1200px) {}
 
-
++/
