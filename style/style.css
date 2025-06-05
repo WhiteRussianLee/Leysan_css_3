@@ -37,6 +37,7 @@ p {
   gap: 1rem;               /* spazio tra le card */
   padding: 1rem;
   background-color: #f1f1f1;
+  justify-content: center;
 }
 
 .card {
@@ -74,7 +75,7 @@ box-shadow:  27px 27px 54px #3f5966,
 }
 
 footer {
-  align-items: center;
+  justify-content: center;
 
 }
 
@@ -86,8 +87,28 @@ footer {
     object-fit: cover;
     margin-bottom: 10px;
   }
+.cardcontainer2 {
+  display:flex;
+  justify-content:center ;
+ gap: 1rem;               /* spazio tra le card */
+  padding: 1rem;
 
+}
 
+.buttons {
+  display:flex;
+  justify-content:center;
+  text-decoration: none;
+  border-radius: 50px;
+  text-align: center;
+  text-transform: capitalize;
+}
+@media (min-width: 576px) {}
 
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1200px) {}
 
 
